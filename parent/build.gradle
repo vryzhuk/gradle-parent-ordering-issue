@@ -1,0 +1,5 @@
+println "Configuring parent. Group: $group"
+
+subprojects {
+    group='com.project.sub'
+}
