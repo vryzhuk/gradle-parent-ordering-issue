@@ -1,6 +1,6 @@
 # Breadth-wise configuration ordering (parent first) is not working when `evaluationDependsOn` is used
 
-Repo reproduces an issue and have next structure:
+Repo reproduces an issue on Gradle 6.5.1. It has next structure:
 
 ```
 parent/
@@ -15,7 +15,7 @@ settings.gradle -> include 'main', 'parent', 'parent:child1'
 
 Result:
 ```
-gradle build
+gradlew build
 > Configure project :parent:child1  <-- should be done after :parent
 child1 group is com.project
 > Configure project :main
