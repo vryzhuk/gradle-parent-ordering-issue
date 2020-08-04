@@ -1,4 +1,4 @@
-# Breadth-wise configuration ordering (parent first) is not working when `evaluationDependsOn` is used
+# Parent first evaluation ordering is broken if `evaluationDependsOn` is used
 
 Repo reproduces an issue on Gradle 6.5.1. It has next structure:
 
